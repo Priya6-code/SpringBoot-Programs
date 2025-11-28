@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: SpringDataJpaCustomGenerator04
+
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521:XE     # Replace with your DB host, port, and SID/service name
+    username: system
+    password: manager
+    driver-class-name: oracle.jdbc.OracleDriver
+
+  jpa:
+    hibernate:
+      ddl-auto: update       # Use 'validate' or 'none' in production
+    show-sql: true
+    database-platform: org.hibernate.dialect.Oracle12cDialect
